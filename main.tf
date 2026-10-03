@@ -4,7 +4,7 @@ provider "aws" {
 }
 resource "aws_instance" "Jenkins-terraform" {
     ami = "ami-01a00762f46d584a1"
-    instance_type = "t3-micro"
+    instance_type = "t3.micro"
     tags = {
       Name = "jenkins-terraform-server"
     }
